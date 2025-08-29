@@ -1,0 +1,89 @@
+/*  Gradient Buttons */
+.btn-primary {
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 8px 18px;
+  box-shadow: 0 4px 12px rgba(240, 101, 149, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(45deg, #f06595, #ff6b6b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(214, 51, 108, 0.5);
+}
+
+.btn-outline-primary {
+  border: 2px solid rgb(147, 209, 221);
+  color: #ff6b6b;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background: black;
+  color: white;
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-hover:hover {
+  transform: scale(1.07) rotate(-1deg);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+.card-hover img {
+  transition: transform 0.5s ease;
+}
+.card-hover:hover img {
+  transform: scale(1.1);
+}
+
+/*  Search Input Styling */
+.form-control {
+  border: 2px solid #ff6b6b;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.form-control:focus {
+  border-color: #d6336c;
+  box-shadow: 0 0 10px rgba(214, 51, 108, 0.5);
+}
+
+/*  Modal Ingredients Badges */
+.ingredients-list li {
+  display: inline-block;
+  background: #ffe2e9;
+  color: #d6336c;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/*  Background */
+body {
+  background: linear-gradient(135deg, #cdf4fd, #d1e5d3);
+  min-height: 100vh;
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up { animation: fadeInUp 1s ease forwards; }
+
+/* Bounce Button */
+@keyframes bounce {
+  0%,20%,50%,80%,100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+.bounce { animation: bounce 2s infinite; }
