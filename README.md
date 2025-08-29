@@ -30,8 +30,7 @@ A React-based web app that helps you discover quick and delicious recipes based 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MeghaChaudhari906/RecipeIdeas-Project.git
-
+git clone https://github.com/MeghaChaudhari906/recipe-idea
 npm install
 
 npm run dev
@@ -47,5 +46,5 @@ npm run dev
 
 ## 🔗 Live Demo
 
-[Your Deployed Project Link](#)
+[https://recipe-idea-mu.vercel.app/](#)
 
